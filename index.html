@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,700italic,400italic&display=swap">
         <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
     </head>
-    <body style="background-image: url('assets/images/backgrounds/joanna-kosinska-1_CMoFsPfso-unsplash.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center top;">
+    <body>
         <header class="sticky-top">
             <nav id="wold-header" style="transition: background-color 0.25s">
                 <div class="container">
@@ -28,45 +28,27 @@
         <main>
             <section class="py-5">
                 <div class="container">
-                    <h1 class="fw-light mb-0 text-center"><span class="d-block fs-5 fw-bold">Welcome to</span><span>Wiley Online Library Designs</span></h1>
+                    <h1 class="fw-light mb-0 text-center"><span class="d-block fs-5 fw-bold">Welcome to</span><span class="display-3">Wiley Online Library Designs</span></h1>
                 </div>
             </section>
             <section class="bg-white py-5">
                 <div class="container">
                     <h2>Components</h2>
+                    <ul> 
+                        <li>
+                            <a href="cheatsheet.html">Cheatsheet</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <section class="py-5" style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.75);">
+            <section class="py-5">
                 <div class="container">
                     <h2>Features</h2>
-                </div>
-            </section>
-            <section class="bg-white py-5"> 
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3>Column title</h3> 
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
-                        </div>
-                        <div class="col">
-                            <h3>Column title</h3> 
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="py-5"> 
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3>Column title</h3> 
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
-                        </div>
-                        <div class="col">
-                            <h3>Column title</h3> 
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
-                        </div>
-                    </div>
+                    <ul> 
+                        <li>
+                            <a href="features/LIT-662/titles-carousel.html">LIT-662 Improve title widget on subject and topic pages</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
@@ -86,32 +68,32 @@
         </footer>
         <script>
 	let lastKnownScrollPosition = 0;
-let ticking = false;
-if (document.getElementById("wold-header")) {
-	var woldHeader = document.getElementById("wold-header");
-}
+	let ticking = false;
 
-function doSomething(scrollPos) {
-  if (scrollPos > 72) {
-	  woldHeader.classList.add("bg-white");
-  } else if (scrollPos < 72) {
-	  woldHeader.classList.remove("bg-white");
-	  
-  }
-}
+	if (document.getElementById("wold-header")) {
+		var woldHeader = document.getElementById("wold-header");
+	};
 
-document.addEventListener('scroll', function(e) {
-  lastKnownScrollPosition = window.scrollY;
+	function doSomething(scrollPos) {
+		if (scrollPos > 72) {
+			woldHeader.classList.add("bg-primary");
+		} else if (scrollPos < 72) {
+			woldHeader.classList.remove("bg-primary");
+		}
+	}
 
-  if (!ticking) {
-    window.requestAnimationFrame(function() {
-      doSomething(lastKnownScrollPosition);
-      ticking = false;
-    });
+	document.addEventListener('scroll', function(e) {
+  		lastKnownScrollPosition = window.scrollY;
 
-    ticking = true;
-  }
-});
+  		if (!ticking) {
+    		window.requestAnimationFrame(function() {
+      			doSomething(lastKnownScrollPosition);
+      			ticking = false;
+    		});
+
+    		ticking = true;
+		}
+	});
 </script>         
         <!-- Bootstrap core JavaScript
     ================================================== -->
