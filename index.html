@@ -16,8 +16,8 @@
         <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header class="sticky-top">
-            <nav id="wold-header" style="transition: background-color 0.25s">
+        <header>
+            <nav>
                 <div class="container">
                     <div class="align-items-center d-flex justify-content-between py-4">
                         <a href="/index.html"><img src="assets/images/logos/wol-logo-black.svg" width="210px"></a>
@@ -45,8 +45,26 @@
                 <div class="container">
                     <h2>Features</h2>
                     <ul> 
-                        <li>
-                            <a href="features/LIT-662/titles-carousel.html">LIT-662 Improve title widget on subject and topic pages</a>
+                        <li>LIT-647 JHP Right rail widget management
+                            <ul> 
+                                <li>
+                                    <a href="features/LIT-647/first-draft.html">First draft</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>LIT-649 Wide table rendering
+                            <ul> 
+                                <li>
+                                    <a href="features/LIT-649/data-tables-plugin.html">Data tables plugin</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>LIT-662 Improve title widget on subject and topic pages
+                            <ul> 
+                                <li>
+                                    <a href="features/LIT-662/titles-carousel.html">Titles carousel</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -65,36 +83,7 @@
                     </div>
                 </div>
             </section>
-        </footer>
-        <script>
-	let lastKnownScrollPosition = 0;
-	let ticking = false;
-
-	if (document.getElementById("wold-header")) {
-		var woldHeader = document.getElementById("wold-header");
-	};
-
-	function doSomething(scrollPos) {
-		if (scrollPos > 72) {
-			woldHeader.classList.add("bg-primary");
-		} else if (scrollPos < 72) {
-			woldHeader.classList.remove("bg-primary");
-		}
-	}
-
-	document.addEventListener('scroll', function(e) {
-  		lastKnownScrollPosition = window.scrollY;
-
-  		if (!ticking) {
-    		window.requestAnimationFrame(function() {
-      			doSomething(lastKnownScrollPosition);
-      			ticking = false;
-    		});
-
-    		ticking = true;
-		}
-	});
-</script>         
+        </footer>         
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
