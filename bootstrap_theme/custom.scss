@@ -33,6 +33,9 @@ $bright-blue: #18b7fb;
 $dark-orange: #d66310;
 $medium-orange: #EB850D;
 $bright-yellow: #ffc805;
+
+// bss overrides
+// color theme
 $primary: $blue;
 $secondary: $gray-600;
 $success: $green;
@@ -44,8 +47,10 @@ $dark: $gray-900;
 $open-access: #6d2077;
 $white: #fff;
 $theme-colors: (  "primary":    $primary,  "secondary":  $secondary,  "success":    $success,  "info":       $info,  "warning":    $warning,  "danger":     $danger,  "light":      $light,  "dark":       $dark, "open-access": $open-access);
+
+// other variables
 $min-contrast-ratio: 4.5;
-$color-contrast-dark: $gray-800;
+$color-contrast-dark: $dark;
 $enable-rounded: false;
 $enable-rfs: false;
 $enable-negative-margins: true;
@@ -56,11 +61,10 @@ $headings-font-weight: $font-weight-bold;
 $btn-font-weight: $font-weight-bold;
 $grid-gutter-width: 1.5rem;
 $border-color: $gray-300;
+$headings-margin-bottom: 0.5em;
+$text-muted: $gray-500;
+$carousel-control-width: 64px;
 
-/* Import web fonts - Must come before any CSS rules. Refresh the Page view after making changes to import statements. */
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Playfair+Display:wght@400;700;900&display=swap');
-// $font-family-sans-serif: 'Lato', sans-serif;
-// $headings-font-family: 'Playfair Display', serif;
 @import "bootstrap/bootstrap-utilities";
 
 $utilities: map-merge(
@@ -110,6 +114,7 @@ $utilities: map-merge(
 /* Generic rules */
 .serif {
     font-family: 'Source Serif Pro', serif;
+    font-weight: normal;
 }
 
 a,
@@ -178,5 +183,20 @@ a,
 
     &:last-of-type::after {
         content: "";
+    }
+}
+
+// WOL classic rules
+body.wol-classic {
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1080px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 1080px;
+        }
     }
 }
