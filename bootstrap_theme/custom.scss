@@ -121,6 +121,12 @@ a,
 .btn-link {
     font-weight: $font-weight-bold;
 }
+.text-decoration-hover {
+  text-decoration: none;
+  &:hover, &:focus, &:active {
+    text-decoration: underline;
+  }
+}
 
 .mdi {
     display: inline-block;
@@ -163,6 +169,43 @@ a,
     column-gap: $grid-gutter-width;
     column-rule: solid 1px $border-color;
     columns: 1;
+}
+
+// animations
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(5%);
+    }
+
+    50% {
+        transform: translateY(-5%);
+    }
+
+    75% {
+        transform: translateY(2.5%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.btn-animation-bounce {
+    &:hover, &:focus {
+        animation: bounce 0.2s;
+    }
+}
+
+.icon-animation-bounce {
+    &:hover, &:focus {
+        .mdi {
+            animation: bounce 0.2s;
+        }
+    }
 }
 
 // WOL specific rules

@@ -12981,6 +12981,11 @@ a,
 .btn-link {
   font-weight: 700; }
 
+.text-decoration-hover {
+  text-decoration: none; }
+  .text-decoration-hover:hover, .text-decoration-hover:focus, .text-decoration-hover:active {
+    text-decoration: underline; }
+
 .mdi {
   display: inline-block;
   text-align: center;
@@ -13018,6 +13023,46 @@ a,
           column-rule: solid 1px #D8D9DA;
   -webkit-columns: 1;
           columns: 1; }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); }
+  25% {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%); }
+  50% {
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%); }
+  75% {
+    -webkit-transform: translateY(2.5%);
+            transform: translateY(2.5%); }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); }
+  25% {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%); }
+  50% {
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%); }
+  75% {
+    -webkit-transform: translateY(2.5%);
+            transform: translateY(2.5%); }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+  .btn-animation-bounce:hover, .btn-animation-bounce:focus {
+    -webkit-animation: bounce 0.2s;
+            animation: bounce 0.2s; }
+    .icon-animation-bounce:hover .mdi, .icon-animation-bounce:focus .mdi {
+      -webkit-animation: bounce 0.2s;
+              animation: bounce 0.2s; }
 
 .wol--bg-gradient--blue-green {
   background-image: -webkit-linear-gradient(315deg, #068853, #005274 100%);
