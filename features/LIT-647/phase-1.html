@@ -54,11 +54,13 @@
                     </div>
                 </div>
                 <nav class="bg-primary">
-                    <div class="container">
+                    <div class="container-lg">
                         <div class="d-flex justify-content-between">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-primary btn-sm py-2 text-uppercase">Home</button>
-                                <div class="dropdown"> 
+                                <button type="button" class="btn btn-primary btn-sm d-lg-none py-2 text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobile-menu-journal">Journal</button>
+                                <button type="button" class="btn btn-primary btn-sm d-lg-none py-2 text-uppercase" data-bs-toggle="collapse" data-bs-target="#mobile-menu-articles">Articles</button>
+                                <button type="button" class="btn btn-primary btn-sm d-lg-inline-block d-none py-2 text-uppercase">Home</button>
+                                <div class="d-lg-inline-block d-none dropdown"> 
                                     <button class="btn btn-primary btn-sm dropdown-toggle flex-fill h-100 py-2 text-uppercase" type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">About</button>                                     
                                     <ul class="border border-2 border-primary dropdown-menu py-0" aria-labelledby="dropdown1"> 
                                         <li>
@@ -81,7 +83,7 @@
                                         </li>
                                     </ul>                                     
                                 </div>
-                                <div class="dropdown"> 
+                                <div class="d-lg-inline-block d-none dropdown"> 
                                     <button class="btn btn-primary btn-sm dropdown-toggle flex-fill h-100 py-2 text-uppercase" type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">Contribute</button>                                     
                                     <ul class="border border-2 border-primary dropdown-menu py-0" aria-labelledby="dropdown1"> 
                                         <li>
@@ -98,7 +100,7 @@
                                         </li>                                         
                                     </ul>
                                 </div>
-                                <div class="dropdown"> 
+                                <div class="d-lg-inline-block d-none dropdown"> 
                                     <button class="btn btn-primary btn-sm dropdown-toggle flex-fill h-100 py-2 text-uppercase" type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">Browse</button>                                     
                                     <ul class="dropdown-menu" aria-labelledby="dropdown1"> 
                                         <li>
@@ -112,7 +114,7 @@
                                         </li>                                         
                                     </ul>                                     
                                 </div>
-                                <div class="dropdown"> 
+                                <div class="d-lg-inline-block d-none dropdown"> 
                                     <button class="btn btn-primary btn-sm dropdown-toggle h-100 py-2 text-uppercase" type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">Special Collections</button>                                     
                                     <ul class="dropdown-menu" aria-labelledby="dropdown1"> 
                                         <li>
@@ -128,27 +130,96 @@
                                 </div>                                 
                             </div>
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-primary btn-sm icon-animation-bounce py-2 text-uppercase">
+                                <button type="button" class="btn btn-primary btn-sm d-lg-none py-2 text-uppercase" data-bs-target="#mobile-menu-actions" data-bs-toggle="collapse">Actions</button>
+                                <button type="button" class="btn btn-primary btn-sm d-lg-inline-block d-none icon-animation-bounce py-2 text-uppercase">
                                     <span class="flex-fill mdi mdi-bell-plus"></span>
                                 </button>
-                                <button type="button" class="btn btn-primary btn-sm icon-animation-bounce py-2 text-uppercase">
+                                <button type="button" class="btn btn-primary btn-sm d-lg-inline-block d-none icon-animation-bounce py-2 text-uppercase">
                                     <span class="flex-fill mdi mdi-facebook"></span>
                                 </button>
-                                <button type="button" class="btn btn-primary btn-sm icon-animation-bounce py-2 text-uppercase">
+                                <button type="button" class="btn btn-primary btn-sm d-lg-inline-block d-none icon-animation-bounce py-2 text-uppercase">
                                     <span class="flex-fill mdi mdi-twitter"></span>
                                 </button>
-                                <button type="button" class="btn btn-primary btn-sm icon-animation-bounce py-2 text-uppercase">
+                                <button type="button" class="btn btn-primary btn-sm d-lg-inline-block d-none icon-animation-bounce py-2 text-uppercase">
                                     <span class="mdi mdi-rss"></span>
                                 </button>                                 
                             </div>
                         </div>
                     </div>
+                    <section data-pg-name="nav-collapses" id="mobile-menu">
+                        <section class="bg-light collapse d-lg-none" data-pg-name="mobile-menu-journal" id="mobile-menu-journal" data-bs-parent="#mobile-menu">
+                            <div class="py-3">
+                                <p class="ms-3">About</p>
+                                <div class="list-group list-group-flush mb-3"> 
+                                    <a class="list-group-item small" href="#">Overview</a> 
+                                    <a class="list-group-item small" href="#">Contact</a> 
+                                    <a class="list-group-item small" href="#">Editorial Board</a> 
+                                    <a class="list-group-item small" href="#">News</a> 
+                                    <a class="list-group-item small" href="#">For journalists</a>
+                                    <a class="list-group-item small" href="#">Advertise</a> 
+                                </div>
+                                <p class="ms-3">Contribute</p>
+                                <div class="list-group list-group-flush mb-3"> 
+                                    <a class="list-group-item small" href="#">Overview</a> 
+                                    <a class="list-group-item small" href="#">Contact</a> 
+                                    <a class="list-group-item small" href="#">Editorial Board</a> 
+                                    <a class="list-group-item small" href="#">News</a> 
+                                    <a class="list-group-item small" href="#">For journalists</a>
+                                    <a class="list-group-item small" href="#">Advertise</a> 
+                                </div>
+                            </div>
+                        </section>
+                        <section class="bg-light collapse d-lg-none" data-pg-name="mobile-menu-articles" id="mobile-menu-articles" data-bs-parent="#mobile-menu">
+                            <div class="py-3">
+                                <p class="ms-3">Browse</p>
+                                <div class="list-group list-group-flush mb-3"> 
+                                    <a class="list-group-item small" href="#">Overview</a> 
+                                    <a class="list-group-item small" href="#">Contact</a> 
+                                    <a class="list-group-item small" href="#">Editorial Board</a> 
+                                    <a class="list-group-item small" href="#">News</a> 
+                                    <a class="list-group-item small" href="#">For journalists</a>
+                                    <a class="list-group-item small" href="#">Advertise</a> 
+                                </div>
+                                <p class="ms-3">Special Collections</p>
+                                <div class="list-group list-group-flush mb-3"> 
+                                    <a class="list-group-item small" href="#">Overview</a> 
+                                    <a class="list-group-item small" href="#">Contact</a> 
+                                    <a class="list-group-item small" href="#">Editorial Board</a> 
+                                    <a class="list-group-item small" href="#">News</a> 
+                                    <a class="list-group-item small" href="#">For journalists</a>
+                                    <a class="list-group-item small" href="#">Advertise</a> 
+                                </div>
+                            </div>
+                        </section>
+                        <section class="bg-light collapse d-lg-none show" data-pg-name="mobile-menu-actions" id="mobile-menu-actions" data-bs-parent="#mobile-menu">
+                            <div class="py-3">
+                                <p class="ms-3">Tools</p>
+                                <div class="list-group list-group-flush mb-3"> 
+                                    <a class="list-group-item small" href="#">Overview</a> 
+                                    <a class="list-group-item small" href="#">Contact</a> 
+                                    <a class="list-group-item small" href="#">Editorial Board</a> 
+                                    <a class="list-group-item small" href="#">News</a> 
+                                    <a class="list-group-item small" href="#">For journalists</a>
+                                    <a class="list-group-item small" href="#">Advertise</a> 
+                                </div>
+                                <p class="ms-3">Follow journal</p>
+                                <div class="list-group list-group-flush mb-3"> 
+                                    <a class="list-group-item small" href="#">Overview</a> 
+                                    <a class="list-group-item small" href="#">Contact</a> 
+                                    <a class="list-group-item small" href="#">Editorial Board</a> 
+                                    <a class="list-group-item small" href="#">News</a> 
+                                    <a class="list-group-item small" href="#">For journalists</a>
+                                    <a class="list-group-item small" href="#">Advertise</a> 
+                                </div>
+                            </div>
+                        </section>
+                    </section>
                 </nav>
             </section>
             <section data-pg-name="page-body" class="py-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-lg-8">
                             <section class="mb-5">
                                 <h2 class="serif">About</h2>
                                 <p>Angewandte Chemie is a journal of the German Chemical Society (GDCh). It is one of the prime chemistry journals in the world. It is the only journal in the field delivering a stimulating mixture of Review-type articles, Highlights, Communications, and Research Articles. New articles appear online almost every day.</p>

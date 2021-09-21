@@ -13083,8 +13083,17 @@ a,
   .wol--author-list button:last-of-type::after {
     content: ""; }
   @media (min-width: 1200px) {
-    body.wol-classic .container {
+    body.wol-classic .container,
+    body.wol-classic .container-sm,
+    body.wol-classic .container-md,
+    body.wol-classic .container-lg,
+    body.wol-classic .container-xl {
       max-width: 1080px; } }
   @media (min-width: 1400px) {
-    body.wol-classic .container {
+    body.wol-classic .container,
+    body.wol-classic .container-sm,
+    body.wol-classic .container-md,
+    body.wol-classic .container-lg,
+    body.wol-classic .container-xl,
+    body.wol-classic .container-xxl {
       max-width: 1080px; } }

@@ -121,11 +121,15 @@ a,
 .btn-link {
     font-weight: $font-weight-bold;
 }
+
 .text-decoration-hover {
-  text-decoration: none;
-  &:hover, &:focus, &:active {
-    text-decoration: underline;
-  }
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
 }
 
 .mdi {
@@ -195,13 +199,15 @@ a,
 }
 
 .btn-animation-bounce {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         animation: bounce 0.2s;
     }
 }
 
 .icon-animation-bounce {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         .mdi {
             animation: bounce 0.2s;
         }
@@ -232,13 +238,22 @@ a,
 // WOL classic rules
 body.wol-classic {
     @media (min-width: 1200px) {
-        .container {
+        .container,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl {
             max-width: 1080px;
         }
     }
 
     @media (min-width: 1400px) {
-        .container {
+        .container,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl,
+        .container-xxl {
             max-width: 1080px;
         }
     }
