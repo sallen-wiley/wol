@@ -13029,14 +13029,14 @@ a,
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
   25% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%); }
+  50% {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%); }
+  75% {
     -webkit-transform: translateY(5%);
             transform: translateY(5%); }
-  50% {
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%); }
-  75% {
-    -webkit-transform: translateY(2.5%);
-            transform: translateY(2.5%); }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
@@ -13046,23 +13046,23 @@ a,
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
   25% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%); }
+  50% {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%); }
+  75% {
     -webkit-transform: translateY(5%);
             transform: translateY(5%); }
-  50% {
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%); }
-  75% {
-    -webkit-transform: translateY(2.5%);
-            transform: translateY(2.5%); }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
   .btn-animation-bounce:hover, .btn-animation-bounce:focus {
-    -webkit-animation: bounce 0.2s;
-            animation: bounce 0.2s; }
+    -webkit-animation: bounce 0.25s;
+            animation: bounce 0.25s; }
     .icon-animation-bounce:hover .mdi, .icon-animation-bounce:focus .mdi {
-      -webkit-animation: bounce 0.2s;
-              animation: bounce 0.2s; }
+      -webkit-animation: bounce 0.25s;
+              animation: bounce 0.25s; }
 
 .wol--bg-gradient--blue-green {
   background-image: -webkit-linear-gradient(315deg, #068853, #005274 100%);

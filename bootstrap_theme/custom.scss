@@ -182,15 +182,15 @@ a,
     }
 
     25% {
-        transform: translateY(5%);
+        transform: translateY(10%);
     }
 
     50% {
-        transform: translateY(-5%);
+        transform: translateY(-8%);
     }
 
     75% {
-        transform: translateY(2.5%);
+        transform: translateY(5%);
     }
 
     100% {
@@ -201,7 +201,7 @@ a,
 .btn-animation-bounce {
     &:hover,
     &:focus {
-        animation: bounce 0.2s;
+        animation: bounce 0.25s;
     }
 }
 
@@ -209,7 +209,7 @@ a,
     &:hover,
     &:focus {
         .mdi {
-            animation: bounce 0.2s;
+            animation: bounce 0.25s;
         }
     }
 }
