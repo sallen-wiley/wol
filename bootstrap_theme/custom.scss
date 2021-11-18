@@ -64,6 +64,9 @@ $border-color: $gray-300;
 $headings-margin-bottom: 0.5em;
 $text-muted: $gray-500;
 $carousel-control-width: 64px;
+$box-shadow: 0 10px 20px rgba($black,0.19), 0 3px 12px rgba($black,0.23);
+$box-shadow-sm: 0 1px 3px rgba($black,0.12), 0 1px 4px rgba($black,0.24);
+$box-shadow-lg: 0 19px 38px rgba($black,0.30), 0 6px 24px rgba($black,0.22);
 
 @import "bootstrap/bootstrap-utilities";
 
@@ -181,16 +184,12 @@ a,
         transform: translateY(0%);
     }
 
-    25% {
-        transform: translateY(10%);
+    33% {
+        transform: translateY(8%);
     }
 
-    50% {
-        transform: translateY(-8%);
-    }
-
-    75% {
-        transform: translateY(5%);
+    66% {
+        transform: translateY(-6%);
     }
 
     100% {
@@ -201,7 +200,7 @@ a,
 .btn-animation-bounce {
     &:hover,
     &:focus {
-        animation: bounce 0.25s;
+        animation: bounce 0.15s;
     }
 }
 

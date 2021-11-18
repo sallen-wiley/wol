@@ -237,16 +237,16 @@
   display: none !important; }
 
 .shadow {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 12px rgba(0, 0, 0, 0.23) !important;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 12px rgba(0, 0, 0, 0.23) !important; }
 
 .shadow-sm {
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24) !important;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24) !important; }
 
 .shadow-lg {
-  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 6px 24px rgba(0, 0, 0, 0.22) !important;
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 6px 24px rgba(0, 0, 0, 0.22) !important; }
 
 .shadow-none {
   -webkit-box-shadow: none !important;
@@ -8208,8 +8208,8 @@ progress {
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 12px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 12px rgba(0, 0, 0, 0.23); }
   .toast:not(.showing):not(.show) {
     opacity: 0; }
   .toast.hide {
@@ -9272,16 +9272,16 @@ progress {
   display: none !important; }
 
 .shadow {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 12px rgba(0, 0, 0, 0.23) !important;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 12px rgba(0, 0, 0, 0.23) !important; }
 
 .shadow-sm {
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24) !important;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24) !important; }
 
 .shadow-lg {
-  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 6px 24px rgba(0, 0, 0, 0.22) !important;
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 6px 24px rgba(0, 0, 0, 0.22) !important; }
 
 .shadow-none {
   -webkit-box-shadow: none !important;
@@ -13028,15 +13028,12 @@ a,
   0% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
-  25% {
-    -webkit-transform: translateY(10%);
-            transform: translateY(10%); }
-  50% {
-    -webkit-transform: translateY(-8%);
-            transform: translateY(-8%); }
-  75% {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%); }
+  33% {
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%); }
+  66% {
+    -webkit-transform: translateY(-6%);
+            transform: translateY(-6%); }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
@@ -13045,21 +13042,18 @@ a,
   0% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
-  25% {
-    -webkit-transform: translateY(10%);
-            transform: translateY(10%); }
-  50% {
-    -webkit-transform: translateY(-8%);
-            transform: translateY(-8%); }
-  75% {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%); }
+  33% {
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%); }
+  66% {
+    -webkit-transform: translateY(-6%);
+            transform: translateY(-6%); }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
   .btn-animation-bounce:hover, .btn-animation-bounce:focus {
-    -webkit-animation: bounce 0.25s;
-            animation: bounce 0.25s; }
+    -webkit-animation: bounce 0.15s;
+            animation: bounce 0.15s; }
     .icon-animation-bounce:hover .mdi, .icon-animation-bounce:focus .mdi {
       -webkit-animation: bounce 0.25s;
               animation: bounce 0.25s; }
