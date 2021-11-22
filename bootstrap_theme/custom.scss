@@ -234,7 +234,8 @@ a,
     }
 }
 
-// WOL classic rules
+// // WOL classic rules
+// WOL container max width
 body.wol-classic {
     @media (min-width: 1200px) {
         .container,
@@ -254,6 +255,30 @@ body.wol-classic {
         .container-xl,
         .container-xxl {
             max-width: 1080px;
+        }
+    }
+}
+
+// WOL article tabs
+.wol--article-tabs {
+    h2 {
+        font-size: 12px;
+    }
+
+    .nav-link {
+        border-bottom-width: 3px;
+    }
+
+    .nav-link.active,
+    .nav-item.show .nav-link {
+        color: $primary;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: $primary;
+        border-left-color: transparent;
+
+        h2 {
+            color: $primary !important;
         }
     }
 }

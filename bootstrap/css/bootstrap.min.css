@@ -13617,3 +13617,15 @@ a,
     body.wol-classic .container-xl,
     body.wol-classic .container-xxl {
       max-width: 1080px; } }
+  .wol--article-tabs h2, .wol--article-tabs .h2 {
+    font-size: 12px; }
+  .wol--article-tabs .nav-link {
+    border-bottom-width: 3px; }
+  .wol--article-tabs .nav-link.active, .wol--article-tabs .nav-item.show .nav-link {
+    color: #005274;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #005274;
+    border-left-color: transparent; }
+    .wol--article-tabs .nav-link.active h2, .wol--article-tabs .nav-link.active .h2, .wol--article-tabs .nav-item.show .nav-link h2, .wol--article-tabs .nav-item.show .nav-link .h2 {
+      color: #005274 !important; }
