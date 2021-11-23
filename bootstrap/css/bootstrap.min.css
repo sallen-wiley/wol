@@ -13621,11 +13621,14 @@ a,
     font-size: 12px; }
   .wol--article-tabs .nav-link {
     border-bottom-width: 3px; }
-  .wol--article-tabs .nav-link.active, .wol--article-tabs .nav-item.show .nav-link {
+  .wol--article-tabs .nav-link.active,
+  .wol--article-tabs .nav-item.show .nav-link {
     color: #005274;
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: #005274;
     border-left-color: transparent; }
-    .wol--article-tabs .nav-link.active h2, .wol--article-tabs .nav-link.active .h2, .wol--article-tabs .nav-item.show .nav-link h2, .wol--article-tabs .nav-item.show .nav-link .h2 {
+    .wol--article-tabs .nav-link.active h2, .wol--article-tabs .nav-link.active .h2,
+    .wol--article-tabs .nav-item.show .nav-link h2,
+    .wol--article-tabs .nav-item.show .nav-link .h2 {
       color: #005274 !important; }
