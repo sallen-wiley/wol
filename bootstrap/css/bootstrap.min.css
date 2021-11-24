@@ -13677,12 +13677,38 @@ a,
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
+
+@-webkit-keyframes rotate360 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate360 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
   .btn-animation-bounce:hover, .btn-animation-bounce:focus {
     -webkit-animation: bounce 0.15s;
             animation: bounce 0.15s; }
     .icon-animation-bounce:hover .mdi, .icon-animation-bounce:focus .mdi {
       -webkit-animation: bounce 0.25s;
               animation: bounce 0.25s; }
+
+.animation-rotate-icon {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: rotate360;
+          animation-name: rotate360;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
 
 .wol--bg-gradient--blue-green {
   background-image: -webkit-linear-gradient(315deg, #068853, #005274 100%);

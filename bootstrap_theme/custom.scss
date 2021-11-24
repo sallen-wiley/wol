@@ -239,6 +239,16 @@ a,
     }
 }
 
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .btn-animation-bounce {
     &:hover,
     &:focus {
@@ -253,6 +263,13 @@ a,
             animation: bounce 0.25s;
         }
     }
+}
+
+.animation-rotate-icon {
+    animation-duration: 3s;
+    animation-name: rotate360;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 // WOL specific rules
