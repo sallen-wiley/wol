@@ -109,6 +109,48 @@ $utilities: map-merge(
 	  responsive: true,
       values: 2 3 4 6,
     ),
+    "border": (
+      property: border,
+	  responsive: true,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-top": (
+      property: border-top,
+	  responsive: true,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-end": (
+      property: border-right,
+	  responsive: true,
+      class: border-end,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-bottom": (
+      property: border-bottom,
+	  responsive: true,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
+    "border-start": (
+      property: border-left,
+	  responsive: true,
+      class: border-start,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
   )
 );
 
@@ -261,7 +303,7 @@ body.wol-classic {
 
 // WOL article tabs
 .wol--article-tabs {
-    h2 {
+    span:not(.mdi) {
         font-size: 12px;
     }
 
@@ -277,7 +319,7 @@ body.wol-classic {
         border-bottom-color: $primary;
         border-left-color: transparent;
 
-        h2 {
+        span:not(.mdi) {
             color: $primary !important;
         }
     }
