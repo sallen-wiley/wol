@@ -272,7 +272,8 @@ a,
     animation-timing-function: linear;
 }
 
-// WOL specific rules
+// // WOL specific rules
+// gradients
 .wol--bg-gradient--blue-green {
     background-image: linear-gradient(135deg, $green,$blue 100%);
 }
@@ -281,6 +282,7 @@ a,
     background-image: linear-gradient(135deg,$gray-100 0,$gray-400 100%);
 }
 
+// author lists
 .wol--author-list button {
     display: inline-flex;
 
@@ -291,6 +293,13 @@ a,
     &:last-of-type::after {
         content: "";
     }
+}
+
+// getFTR
+.getFTR-icon {
+    width: 18px;
+    height: 18px;
+    padding: 1px;
 }
 
 // // WOL classic rules

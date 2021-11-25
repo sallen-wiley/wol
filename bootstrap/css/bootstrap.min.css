@@ -13728,6 +13728,11 @@ a,
     content: ","; }
   .wol--author-list button:last-of-type::after {
     content: ""; }
+
+.getFTR-icon {
+  width: 18px;
+  height: 18px;
+  padding: 1px; }
   @media (min-width: 1200px) {
     body.wol-classic .container,
     body.wol-classic .container-sm,
