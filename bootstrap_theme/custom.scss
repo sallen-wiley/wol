@@ -302,6 +302,28 @@ a,
     padding: 1px;
 }
 
+// article header related article linking
+.versionLinking-button[aria-expanded=true] {
+    border-bottom: 2px solid;
+    border-bottom-color: inherit
+}
+
+// animated chevron
+a[aria-expanded],
+button[aria-expanded] {
+    .collapse-chevron {
+        transition-duration: .25s;
+        transition-property: transform;
+    }
+}
+
+a[aria-expanded=false],
+button[aria-expanded=false] {
+    .collapse-chevron {
+        transform: rotate(180deg);
+    }
+}
+
 // // WOL classic rules
 // WOL container max width
 body.wol-classic {

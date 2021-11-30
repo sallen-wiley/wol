@@ -13733,6 +13733,25 @@ a,
   width: 18px;
   height: 18px;
   padding: 1px; }
+
+.versionLinking-button[aria-expanded=true] {
+  border-bottom: 2px solid;
+  border-bottom-color: inherit; }
+  a[aria-expanded] .collapse-chevron,
+  button[aria-expanded] .collapse-chevron {
+    -webkit-transition-duration: .25s;
+         -o-transition-duration: .25s;
+            transition-duration: .25s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform; }
+  a[aria-expanded=false] .collapse-chevron,
+  button[aria-expanded=false] .collapse-chevron {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
   @media (min-width: 1200px) {
     body.wol-classic .container,
     body.wol-classic .container-sm,
