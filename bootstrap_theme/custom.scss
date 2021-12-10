@@ -33,6 +33,10 @@ $bright-blue: #18b7fb;
 $dark-orange: #d66310;
 $medium-orange: #EB850D;
 $bright-yellow: #ffc805;
+$w-dark-gray-1: #505050;
+$w-dark-gray-2: #828282;
+$w-light-gray-1: #d8d9da;
+$w-light-gray-2: #efeff0;
 
 // bss overrides
 // color theme
@@ -44,9 +48,9 @@ $warning: $orange;
 $danger: $red;
 $light: $gray-100;
 $dark: $gray-900;
-$open-access: #6d2077;
+$open-access: $dark-berry;
 $white: #fff;
-$theme-colors: (  "primary":    $primary,  "secondary":  $secondary,  "success":    $success,  "info":       $info,  "warning":    $warning,  "danger":     $danger,  "light":      $light,  "dark":       $dark, "open-access": $open-access);
+$theme-colors: ("primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, "open-access": $open-access, "dark-berry": $dark-berry, "medium-berry": $medium-berry, "bright-berry": $bright-berry, "w-light-gray-2": $w-light-gray-2);
 
 // other variables
 $min-contrast-ratio: 4.5;
