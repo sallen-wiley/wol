@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-pgc-master="basic.html">
+<html lang="en" data-pgc-master="journal.html">
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -7,53 +7,43 @@
         <meta name="description" content=""/>
         <meta name="author" content=""/>
         <title>Blank Template for Bootstrap</title>
-        <meta name="theme-color" content="#ffffff"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png"/>
-        <link rel="shortcut icon" href="../../assets/favicons/favicon.ico"/>
-        <link rel="manifest" href="../../manifest.webmanifest"/>
         <!-- Bootstrap core CSS -->
         <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
         <link href="../../style.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic,400italic,700italic&display=swap"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,700italic,400italic&display=swap"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic,400italic,700italic&display=swap" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,700italic,400italic&display=swap" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body class="wol-classic" data-pgc-field="wolBody">
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
+    <body class="wol-classic">
         <header data-pgc="wol.header">
             <nav class="shadow-sm">
                 <div class="container">
                     <div class="align-items-center d-flex justify-content-between py-4"><a href="/index.html"><img src="../../assets/images/logos/wol-logo-black.svg" width="210px"/></a>
-                        <button type="button" class="btn btn-link btn-sm" data-pgc-field="wol-log-in-register">Log in / Register</button>
+                        <button type="button" class="btn btn-link btn-sm" data-bs-toggle="modal" data-bs-target="#modal1" data-pgc-field="wol-log-in-register">Log in / Register</button>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
-            <section data-pg-name="ad-leaderboard" class="py-3">
+            <section data-pg-name="ad-leaderboard" class="py-3" data-pgc="wolAdLeaderboard">
                 <img src="../../assets/images/ads/leaderboard.png" class="d-block img-fluid mx-auto"/>
             </section>
             <section data-pg-name="journal-header">
                 <div class="mb-3">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-lg-8">
-                                <a href=""><img src="../../assets/images/branding/10970037.jpg" class="img-fluid mb-2"/></a> 
+                            <div class="col-12 col-lg-8"><a href=""><img src="../../../assets/images/branding/10970037.jpg" class="img-fluid mb-2"/></a> 
                             </div>
                             <div class="col"> 
 </div>
                         </div>
                     </div>
                 </div>
-                <nav class="bg-primary py-2">
+                <nav class="align-items-center bg-primary d-flex" style="height: 52px;">
                     <div class="container">
                         <div class="d-flex justify-content-between">
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <div class="btn-group d-lg-flex d-none" role="group" aria-label="Basic example">
                                 <button type="button" class="border-0 border-end border-white btn btn-primary btn-sm fw-normal px-3 py-0 text-uppercase">Home</button>
                                 <div class="dropdown"> 
                                     <button class="border-0 border-end border-white btn btn-primary btn-sm dropdown-toggle flex-fill fw-normal h-100 px-3 py-0 text-uppercase" type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">About</button>                                     
@@ -142,11 +132,10 @@
                     </div>
                 </nav>
             </section>
-            <section data-pg-name="page-body" class="py-5">
+            <section data-pg-name="page-body" class="py-5" data-pgc-field="editableJournalPageBody">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-8">
-                            <section class="mb-5">
+                        <div class="col-12 col-lg-8"><section class="mb-5">
                                 <h2 class="serif">Author guidelines</h2>
                                 <div>
                                     <p><a id="ToC" name="ToC"></a><strong>Networks now offers <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/free-format-submission.html">Free Format submission</a> for a simplified and streamlined submission process; <a href="#FreeFormat">More details here.</a></strong></p>
@@ -172,7 +161,7 @@
                                     <p><a id="_1._SUBMISSION" name="_1._SUBMISSION"></a></p>
                                     <p>1. SUBMISSION</p>
                                     <p>Authors should kindly note that submission implies that the content has not been published or submitted for publication elsewhere except as a brief abstract in the proceedings of a scientific meeting or symposium.</p>
-                                    <p>New submissions should be made via the Research Exchange submission portal <a href="https://wiley.atyponrex.com/journal/NET">https://wiley.atyponrex.com/journal/NET</a>. Should your manuscript proceed to the revision stage, you will be directed to make your revisions via the same submission portal. You may check the status of your submission at anytime by logging on to <a href="#">submission.wiley.com</a> and clicking the “My Submissions” button. For technical help with the submission system, please review our FAQs or contact <a href="mailto:submissionhelp@wiley.com">submissionhelp@wiley.com</a>.</p>
+                                    <p>New submissions should be made via the Research Exchange submission portal <a href="https://wiley.atyponrex.com/journal/NET">https://wiley.atyponrex.com/journal/NET</a>. Should your manuscript proceed to the revision stage, you will be directed to make your revisions via the same submission portal. You may check the status of your submission at anytime by logging on to <a href="https://onlinelibrary.wiley.com/page/journal/15206750/homepage/submissions.wiley.com">submission.wiley.com</a> and clicking the “My Submissions” button. For technical help with the submission system, please review our FAQs or contact <a href="mailto:submissionhelp@wiley.com">submissionhelp@wiley.com</a>.</p>
                                     <p>For submissions started prior to May 17, 2021, please visit <a href="https://mc.manuscriptcentral.com/net">https://mc.manuscriptcentral.com/net</a> to manage or complete your submission. <br/><br/></p>
                                     <p><strong>DATA PROTECTION</strong></p>
                                     <p>By submitting a manuscript to or reviewing for this publication, your name, email address, and affiliation, and other contact details the publication might require, will be used for the regular operations of the publication, including, when necessary, sharing with the publisher (Wiley) and partners for production and publication. The publication and the publisher recognize the importance of protecting the personal information collected from users in the operation of these services, and have practices in place to ensure that steps are taken to maintain the security, integrity, and privacy of the personal data collected and processed. You can learn more at: https://authorservices.wiley.com/statements/data-protection-policy.html.</p>
@@ -276,7 +265,7 @@
                                     </div>
                                     <div>[1] Encyclopediavirginia.org, <em>Slavery during the civil war</em>, http://www.encyclopediavirginia.org/Slavery_During_the_Civil_War, 2015.
                                     </div>
-                                    <div>[2] NOAA, E<em>lusive El Niño arrives</em>, <a href="#">http://www.noaanews.noaa.gov/stories2015/20150305-noaa-advisory-elnino-arrives.html,</a> 2015.
+                                    <div>[2] NOAA, E<em>lusive El Niño arrives</em>, <a href="http://www.noaanews.noaa.gov/stories2015/20150305-noaa-advisory-elnino-arrives.html,">http://www.noaanews.noaa.gov/stories2015/20150305-noaa-advisory-elnino-arrives.html,</a> 2015.
                                     </div>
                                     <p><strong>Endnotes</strong></p>
                                     <p>Endnotes should be placed as a list at the end of the paper only, not at the foot of each page. They should be numbered in the list and referred to in the text with consecutive, superscript Arabic numerals. Keep endnotes brief; they should contain only short comments tangential to the main argument of the paper.</p>
@@ -326,7 +315,7 @@
                                     <p>  5. AUTHOR LICENSING</p>
                                     <p>If your paper is accepted, the author identified as the formal corresponding author will receive an email prompting them to log in to <a href="https://authorservices.wiley.com/home.html" target="_blank" rel="noopener">Author Services</a>, where via the Wiley Author Licensing Service (WALS) they will be required to complete a copyright license agreement on behalf of all authors of the paper.</p>
                                     <p>Authors may choose to publish under the terms of the journal’s standard copyright agreement, or <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/open-access/onlineopen.html" target="_blank" rel="noopener"> Open Access </a> under the terms of a Creative Commons License.</p>
-                                    <p>General information regarding licensing and copyright is available<a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/licensing/licensing-info-faqs.html" target="_blank" rel="noopener"> here </a>. To review the Creative Commons License options offered under Open Access, please <a href=" https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/licensing/open-access-agreements.html " target="_blank" rel="noopener">click here</a>. (Note that certain funders mandate a particular type of CC license be used; to check this please click <a href="#" target="_blank" rel="noopener">here</a>.)</p>
+                                    <p>General information regarding licensing and copyright is available<a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/licensing/licensing-info-faqs.html" target="_blank" rel="noopener"> here </a>. To review the Creative Commons License options offered under Open Access, please <a href=" https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/licensing/open-access-agreements.html " target="_blank" rel="noopener">click here</a>. (Note that certain funders mandate a particular type of CC license be used; to check this please click <a href="“https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/open-access/author-compliance-tool.html" target="_blank" rel="noopener">here</a>.)</p>
                                     <p><em><strong>Self-Archiving Definitions and Policies</strong></em> Note that the journal’s standard copyright agreement allows for self-archiving of different versions of the article under specific conditions. Please click <a href="http://www.wileyauthors.com/self-archiving" target="_blank" rel="noopener">here</a> for more detailed information about self-archiving definitions and policies.</p>
                                     <p><strong><em> Open Access fees:</em></strong> Authors who choose to publish using Open Access will be charged a fee. A list of Article Publication Charges for Wiley journals is available <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/open-access/article-publication-charges.html" target="_blank" rel="noopener">here</a>.</p>
                                     <p><strong> <em>Funder Open Access: </em></strong> Please click <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing-open-access/open-access/funder-agreements.html" target="_blank" rel="noopener">here</a> for more information on Wiley’s compliance with specific Funder Open Access Policies.</p>
@@ -361,24 +350,22 @@
                                     <p><em><a href="#ToC">Return to Guideline Sections</a></em></p>
                                     <p><em>Author Guidelines updated January 10, 2020</em></p>
                                 </div>
-                            </section>                             
-                        </div>
-                        <div class="col-12 col-lg-4">
-                            <section class="mb-5">
+                            </section> 
+</div>
+                        <div class="col-12 col-lg-4"><section class="mb-5">
                                 
                                 <div data-pg-name="rr-submitAnArticle" data-pgc="componentRrSubmitAnArticle">
-    <div class="bg-w-light-gray-2 mb-3 p-3">
-        <h3 class="h5">Submit an article</h3>
-        <p class="small">As of May 18, 2021, all new Networks manuscripts are submitted through the <a href="https://wiley.atyponrex.com/journal/NET" target="_blank">Wiley Authors Submission</a> platform.</p><a class="btn btn-primary mb-3" href="#">Start your submission</a>
-        <p class="fst-italic small">For submissions started prior to May 18, 2021, please <a href="https://mc.manuscriptcentral.com/net" target="_blank">visit Manuscript Central</a> to manage or complete your submission.</p>
-    </div>
-</div>
-                            </section>
-                            <section class="mb-5 text-center" data-pg-name="ad-300x250">
+                            <div class="bg-w-light-gray-2 mb-3 p-3">
+                                <h3 class="h5">Submit an article</h3>
+                                <p class="small">As of May 18, 2021, all new Networks manuscripts are submitted through the <a href="https://wiley.atyponrex.com/journal/NET" target="_blank">Wiley Authors Submission</a> platform.</p>
+                                <a class="btn btn-primary mb-3" href="#">Start your submission</a>
+                                <p class="fst-italic small">For submissions started prior to May 18, 2021, please <a href="https://mc.manuscriptcentral.com/net" target="_blank">visit Manuscript Central</a> to manage or complete your submission.</p>
+                            </div>
+                        </div>
+                            </section><section class="mb-5 text-center" data-pg-name="ad-300x250">
                                 <p class="mb-0 small">Advertisement</p>
                                 <img src="../../assets/images/ads/300x250.png"/>
-                            </section>
-                            <section class="mb-5">
+                            </section><section class="mb-5">
                                 <div class="mb-3">
                                     <h3 class="h5">Wiley Editing Services</h3>
                                     <p class="mb-2 small">Take the stress out of manuscript writing with Article Preparation services.</p>
@@ -389,8 +376,7 @@
                                         <a class="align-items-center d-flex link-primary list-group-item px-0 small" href="#"><span class="mdi mdi-chevron-triple-right me-3"></span><span class="flex-grow-1">View all editing services</span></a> 
                                     </div>
                                 </div>
-                            </section>
-                            <section class="mb-5">
+                            </section><section class="mb-5">
                                 <div class="mb-3">
                                     <h3 class="h5">Journal Cover Images</h3>
                                     <p class="mb-2 small">Feature your article with an eye-catching image on the Networks issue cover. Articles with a Front Cover Image average <b>35% higher readership</b> on Wiley Online Library.</p>
@@ -398,8 +384,7 @@
                                         <a class="align-items-center d-flex link-primary list-group-item px-0 small" href="#"><span class="mdi mdi-chevron-triple-right me-3"></span><span class="flex-grow-1">Learn about cover images</span></a> 
                                     </div>
                                 </div>
-                            </section>
-                            <section class="mb-5">
+                            </section><section class="mb-5">
                                 <div class="mb-3">
                                     <h3 class="h5">Manuscript preparation resources</h3>
                                     <p class="mb-2 small">Check out Wiley&apos;s collection of free article preparation resources.</p>
@@ -409,12 +394,11 @@
                                         <a class="align-items-center d-flex link-primary list-group-item px-0 small" href="#"><span class="mdi mdi-chevron-triple-right me-3"></span><span class="flex-grow-1">View all preparation resources</span></a> 
                                     </div>
                                 </div>
-                            </section>
-                            <section class="mb-5 text-center" data-pg-name="ad-300x250">
+                            </section><section class="mb-5 text-center" data-pg-name="ad-300x250">
                                 <p class="mb-0 small">Advertisement</p>
                                 <img src="../../assets/images/ads/300x250-scitec.png"/>
                             </section>
-                        </div>
+</div>
                     </div>
                 </div>
             </section>
@@ -481,6 +465,9 @@
                 </div>
             </section>
         </footer>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
         <script src="../../assets/js/popper.min.js"></script>
         <script src="../../bootstrap/js/bootstrap.min.js"></script>
     </body>

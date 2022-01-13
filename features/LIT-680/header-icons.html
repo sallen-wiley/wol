@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-pgc-master="basic.html">
+<html lang="en" data-pgc-master="journal.html">
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -7,53 +7,43 @@
         <meta name="description" content=""/>
         <meta name="author" content=""/>
         <title>Blank Template for Bootstrap</title>
-        <meta name="theme-color" content="#ffffff"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png"/>
-        <link rel="shortcut icon" href="../../assets/favicons/favicon.ico"/>
-        <link rel="manifest" href="../../manifest.webmanifest"/>
         <!-- Bootstrap core CSS -->
         <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
         <link href="../../style.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic,400italic,700italic&display=swap"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,700italic,400italic&display=swap"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic,400italic,700italic&display=swap" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,700italic,400italic&display=swap" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body class="wol-classic" data-pgc-field="wolBody">
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
+    <body class="wol-classic">
         <header data-pgc="wol.header">
             <nav class="shadow-sm">
                 <div class="container">
                     <div class="align-items-center d-flex justify-content-between py-4"><a href="/index.html"><img src="../../assets/images/logos/wol-logo-black.svg" width="210px"/></a>
-                        <button type="button" class="btn btn-link btn-sm" data-pgc-field="wol-log-in-register">Log in / Register</button>
+                        <button type="button" class="btn btn-link btn-sm" data-bs-toggle="modal" data-bs-target="#modal1" data-pgc-field="wol-log-in-register">Log in / Register</button>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
-            <section data-pg-name="ad-leaderboard" class="py-3">
+            <section data-pg-name="ad-leaderboard" class="py-3" data-pgc="wolAdLeaderboard">
                 <img src="../../assets/images/ads/leaderboard.png" class="d-block img-fluid mx-auto"/>
             </section>
             <section data-pg-name="journal-header">
                 <div class="mb-3">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-lg-8">
-                                <a href=""><img src="../../assets/images/branding/10970037.jpg" class="img-fluid mb-2"/></a> 
+                            <div class="col-12 col-lg-8"><a href=""><img src="../../../assets/images/branding/10970037.jpg" class="img-fluid mb-2"/></a> 
                             </div>
                             <div class="col"> 
 </div>
                         </div>
                     </div>
                 </div>
-                <nav class="bg-primary py-2">
+                <nav class="align-items-center bg-primary d-flex" style="height: 52px;">
                     <div class="container">
                         <div class="d-flex justify-content-between">
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <div class="btn-group d-lg-flex d-none" role="group" aria-label="Basic example">
                                 <button type="button" class="border-0 border-end border-white btn btn-primary btn-sm fw-normal px-3 py-0 text-uppercase">Home</button>
                                 <div class="dropdown"> 
                                     <button class="border-0 border-end border-white btn btn-primary btn-sm dropdown-toggle flex-fill fw-normal h-100 px-3 py-0 text-uppercase" type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">About</button>                                     
@@ -142,11 +132,10 @@
                     </div>
                 </nav>
             </section>
-            <section data-pg-name="page-body" class="py-5">
+            <section data-pg-name="page-body" class="py-5" data-pgc-field="editableJournalPageBody">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-8">
-                            <section class="mb-5">
+                        <div class="col-12 col-lg-8"><section class="mb-5">
                                 <h2 class="serif">Author guidelines</h2>
                                 <div>
                                     <p><a id="ToC" name="ToC"></a><strong>Networks now offers <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/free-format-submission.html">Free Format submission</a> for a simplified and streamlined submission process; <a href="#FreeFormat">More details here.</a></strong></p>
@@ -361,20 +350,19 @@
                                     <p><em><a href="#ToC">Return to Guideline Sections</a></em></p>
                                     <p><em>Author Guidelines updated January 10, 2020</em></p>
                                 </div>
-                            </section>                             
-                        </div>
-                        <div class="col-12 col-lg-4">
-                            <section class="mb-5">
+                            </section> 
+</div>
+                        <div class="col-12 col-lg-4"><section class="mb-5">
                                 
                                 <div data-pg-name="rr-submitAnArticle" data-pgc="componentRrSubmitAnArticle">
-    <div class="bg-w-light-gray-2 mb-3 p-3">
-        <h3 class="h5">Submit an article</h3>
-        <p class="small">As of May 18, 2021, all new Networks manuscripts are submitted through the <a href="https://wiley.atyponrex.com/journal/NET" target="_blank">Wiley Authors Submission</a> platform.</p><a class="btn btn-primary mb-3" href="#">Start your submission</a>
-        <p class="fst-italic small">For submissions started prior to May 18, 2021, please <a href="https://mc.manuscriptcentral.com/net" target="_blank">visit Manuscript Central</a> to manage or complete your submission.</p>
-    </div>
-</div>
-                            </section>
-                            <section class="mb-5">
+                            <div class="bg-w-light-gray-2 mb-3 p-3">
+                                <h3 class="h5">Submit an article</h3>
+                                <p class="small">As of May 18, 2021, all new Networks manuscripts are submitted through the <a href="https://wiley.atyponrex.com/journal/NET" target="_blank">Wiley Authors Submission</a> platform.</p>
+                                <a class="btn btn-primary mb-3" href="#">Start your submission</a>
+                                <p class="fst-italic small">For submissions started prior to May 18, 2021, please <a href="https://mc.manuscriptcentral.com/net" target="_blank">visit Manuscript Central</a> to manage or complete your submission.</p>
+                            </div>
+                        </div>
+                            </section><section class="mb-5">
                                 <div data-pgc-define="compHeaderIcons" data-pgc-define-name="Header icons">
                                     <div class="align-items-end bg-dark-berry d-flex p-3" data-pgc-edit="editAuthorResourcePanelColor[no_content]" data-pgc-edit-classes="bg-dark-berry,bg-primary,bg-dark-green,bg-dark-blue">
                                         <h3 class="flex-grow-1 h5 mb-0 me-2 text-white" data-pgc-edit="editAuthorResourcePanelTitle">Wiley Editing Services</h3>
@@ -399,8 +387,7 @@
                                         <a class="align-items-center btn btn-link d-flex link-medium-berry mt-3 px-0 text-decoration-none text-start w-100" href="#" data-pgc-optional="optionalAuthorResourcePanelActionPlaceholder" data-pgc-edit="editableViewMoreAction" data-pgc-edit-classes="link-medium-berry,link-medium-blue,link-medium-green"><span class="flex-grow-1">View all services</span><span class="mdi mdi-chevron-right"></span></a>
                                     </div>
                                 </div>
-                            </section>
-                            <section class="mb-5">
+                            </section><section class="mb-5">
                                 <div data-pgc="compHeaderIcons">
                                     <div class="align-items-end bg-dark-blue d-flex p-3" data-pgc-field="editAuthorResourcePanelColor">
                                         <h3 class="flex-grow-1 h5 mb-0 me-2 text-white" data-pgc-field="editAuthorResourcePanelTitle">Journal Cover Images</h3>
@@ -426,8 +413,7 @@
                                         
                                     </div>
                                 </div>
-                            </section>
-                            <section class="mb-5">
+                            </section><section class="mb-5">
                                 <div data-pgc="compHeaderIcons">
                                     <div class="align-items-end bg-dark-green d-flex p-3" data-pgc-field="editAuthorResourcePanelColor">
                                         <h3 class="flex-grow-1 h5 mb-0 me-2 text-white" data-pgc-field="editAuthorResourcePanelTitle">Manuscript preparation resources</h3>
@@ -447,7 +433,7 @@
                                     </div>
                                 </div>
                             </section>
-                        </div>
+</div>
                     </div>
                 </div>
             </section>
@@ -514,6 +500,9 @@
                 </div>
             </section>
         </footer>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
         <script src="../../assets/js/popper.min.js"></script>
         <script src="../../bootstrap/js/bootstrap.min.js"></script>
     </body>
