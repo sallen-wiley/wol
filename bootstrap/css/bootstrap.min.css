@@ -14831,3 +14831,9 @@ a,
     .wol--article-tabs .nav-link.active span:not(.mdi),
     .wol--article-tabs .nav-item.show .nav-link span:not(.mdi) {
       color: #005274 !important; }
+
+.all-links-medium-blue a {
+  color: #1b5ba0; }
+
+.all-links-dark-blue a {
+  color: #123d80; }
