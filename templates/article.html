@@ -18,7 +18,7 @@
         <!-- Custom styles for this template -->
         <link href="../style.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,700italic,400italic&display=swap" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic,400italic,700italic&display=swap" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic,400italic,700italic,600,600italic&display=swap" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body class="wol-classic">
@@ -38,7 +38,7 @@
             <section class="py-3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-8">
+                        <div class="col-12 col-lg-8" data-pgc-edit="editableArticleBody">
                             <section data-pg-name="article-header">
                                 <a href="#"><img src="../assets/images/branding/25785745.jpg" class="img-fluid mb-4"/></a>
                                 <div class="d-flex flex-wrap mb-2 small"><span class="border-end me-2 pe-2">Original Article</span><span class="align-items-baseline border-end d-inline-flex fw-bold me-2 pe-2 text-open-access" data-pgc-optional="wolArticleHeaderOabadge"><span class="align-self-center mdi mdi-18px mdi-lock-open-outline"></span>Open Access</span><span class="align-items-center d-inline-flex" data-pg-name="creative-commons"><img src="../assets/images/icons/creative-commons/cc.svg" width="18px" class="getFTR-icon me-1"/><img src="../assets/images/icons/creative-commons/nc.svg" width="18px" class="getFTR-icon me-1"/><img src="../assets/images/icons/creative-commons/by.svg" width="18px" class="getFTR-icon"/></span>
@@ -105,8 +105,10 @@
                             </section>
                             <nav data-pg-name="article-nav" class="mb-4 mt-4 sticky-top" data-pgc-define="wolArticleNav">
                                 <div class="bg-white border-2 border-bottom d-flex py-2">
-                                    <button type="button" class="btn btn-link btn-sm d-inline-flex fw-normal text-decoration-none text-muted text-uppercase">
+                                    <button type="button" class="btn btn-link btn-sm d-inline-flex fw-normal text-decoration-none text-muted text-uppercase" data-pgc-optional="optionalSections">
                                         <span class="link-primary mdi mdi-table-of-contents me-1"></span>Sections
+                                    </button><button type="button" class="btn btn-link btn-sm d-inline-flex text-decoration-none" data-pgc-optional="optionalFullText">
+                                        Read the full text<span class="link-primary mdi mdi-chevron-right ms-1"></span>
                                     </button>
                                     <div class="btn-group ms-auto" role="group" aria-label="Basic example"> 
                                         <button type="button" class="btn btn-link btn-sm d-inline-flex fw-normal text-decoration-none text-muted text-uppercase">
@@ -123,7 +125,27 @@
                                         </button>                                         
                                     </div>
                                 </div>
-                            </nav>
+                            </nav><section data-pg-name="Article body" data-pgc-optional="optionalArticleBodyAbstract">
+                                <section data-pg-name="abstract" class="border-4 border-start ps-3">
+                                    <h2 class="fw-normal">Abstract</h2>
+                                    <section>
+                                        <h3 class="fw-normal">Objective</h3>
+                                        <p>To examine relationships between knee osteoarthritis (KOA) and obesity, diabetes mellitus (DM), and cardiovascular disease (CVD).</p>
+                                    </section>
+                                    <section>
+                                        <h3 class="fw-normal">Methods</h3>
+                                        <p>Associations of time-dependent obesity, DM, and CVD with KOA transition states over approximately 18 years were examined among 4093 participants from a community-based cohort. Transition states were 1) no knee symptoms and no radiographic KOA (rKOA; Kellgren-Lawrence grade ≥2 in at least one knee), 2) asymptomatic rKOA, 3) knee symptoms only, 4) symptomatic rKOA (sxKOA; rKOA and symptoms in same knee). Markov multistate models estimated adjusted hazard ratios (aHRs) and 95% confidence intervals (CIs) for associations between comorbid conditions and transitions across states, adjusting for baseline age, sex, race, education, enrollment cohort, birth year, and time-dependent knee injury history.</p>
+                                    </section>
+                                    <section>
+                                        <h3 class="fw-normal">Results</h3>
+                                        <p>At baseline, 40% of participants had obesity, 13% had DM, and 22% had CVD (mean age = 61 years; 34% Black; 37% male). Compared with those without obesity, those with obesity had a higher hazard of worsening from no rKOA/no symptoms to asymptomatic rKOA (aHR = 1.7; 95% CI = 1.3-2.2) and from knee symptoms to sxKOA (aHR = 1.7; 95% CI = 1.3-2.3), as well as a lower hazard of symptom resolution from sxKOA to asymptomatic rKOA (aHR = 0.5 [95% = CI 0.4-0.7]). Compared with those without CVD, those with CVD had a higher hazard of worsening from no rKOA/symptoms to knee symptoms (aHR = 1.5; 95% CI = 1.1-2.1). DM was not associated with transitions of rKOA.</p>
+                                    </section>
+                                    <section>
+                                        <h3 class="fw-normal">Conclusion</h3>
+                                        <p>Prevention of obesity and CVD may limit the development or worsening of rKOA and symptoms.</p>
+                                    </section>
+                                </section>
+                            </section>
                         </div>
                         <div class="col-12 col-lg-4">
                             <section data-pg-name="article issue" class="mb-4">
