@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-pgc-set-master>
+<html lang="en" data-pgc-master="basic.html">
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,700italic,400italic&display=swap"/>
         <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body class="wol-classic" data-pgc-edit="wolBody" data-pgc-edit-classes="wol-classic">
+    <body class="wol-classic" data-pgc-field="wolBody">
         <header data-pgc="wol.header">
             <nav class="shadow-sm">
                 <div class="container">
@@ -31,7 +31,55 @@
                 </div>
             </nav>
         </header>
-        <main class="pg-empty-placeholder"></main>
+        <main><section class="py-5">
+                <div class="container">
+                    <h1>Forms</h1>
+                </div>
+            </section><section class="py-5">
+                <div class="container">
+                    <h2>Radios</h2>
+                    <form role="form">
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"/> 
+                            <label class="form-check-label" for="exampleRadios1">First default radio</label>                             
+                        </div>
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"/> 
+                            <label class="form-check-label" for="exampleRadios2"> 
+                                Second default radio
+</label>                             
+                        </div>
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"/> 
+                            <label class="form-check-label" for="exampleRadios3">Third default radio</label>                             
+                        </div>
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4"/> 
+                            <label class="form-check-label" for="exampleRadios4"> 
+                                Forth default radio
+</label>                             
+                        </div>
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5"/> 
+                            <label class="form-check-label" for="exampleRadios5"> 
+                                Fifth default radio
+</label>                             
+                        </div>
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6"/> 
+                            <label class="form-check-label" for="exampleRadios6"> 
+                                Sixth default radio
+</label>                             
+                        </div>
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadiosDisabled" value="optionDisabled" disabled/> 
+                            <label class="form-check-label" for="exampleRadiosDisabled"> 
+                                Disabled radio
+</label>                             
+                        </div>                                                                                                                                                      
+                    </form>                                          
+                </div>
+            </section></main>
         <footer data-pgc="wol.footer">
             <section data-pg-name="wol" class="bg-primary py-4 text-center text-lg-start text-white" data-pgc-field="wol-footer-wol">
                 <div class="container">
