@@ -53,8 +53,9 @@ $danger: $red;
 $light: $gray-100;
 $dark: $gray-900;
 $open-access: $dark-berry;
+$getFTR: #096A73;
 $white: #fff;
-$theme-colors: ("primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, "open-access": $open-access, "dark-berry": $dark-berry, "medium-berry": $medium-berry, "bright-berry": $bright-berry, "dark-green": $dark-green, "medium-green": $medium-green, "bright-green": $bright-green, "dark-blue": $dark-blue, "medium-blue": $medium-blue, "bright-blue": $bright-blue, "w-light-gray-2": $w-light-gray-2);
+$theme-colors: ("primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, "open-access": $open-access, "getFTR": $getFTR, "dark-berry": $dark-berry, "medium-berry": $medium-berry, "bright-berry": $bright-berry, "dark-green": $dark-green, "medium-green": $medium-green, "bright-green": $bright-green, "dark-blue": $dark-blue, "medium-blue": $medium-blue, "bright-blue": $bright-blue, "w-light-gray-2": $w-light-gray-2);
 
 // other variables
 $min-contrast-ratio: 3;

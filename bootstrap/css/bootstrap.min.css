@@ -56,6 +56,11 @@
   .link-open-access:hover, .link-open-access:focus {
     color: #761852; }
 
+.link-getFTR {
+  color: #096A73; }
+  .link-getFTR:hover, .link-getFTR:focus {
+    color: #07555c; }
+
 .link-dark-berry {
   color: #941e66; }
   .link-dark-berry:hover, .link-dark-berry:focus {
@@ -477,6 +482,9 @@
 
 .border-open-access {
   border-color: #941e66 !important; }
+
+.border-getFTR {
+  border-color: #096A73 !important; }
 
 .border-dark-berry {
   border-color: #941e66 !important; }
@@ -1336,6 +1344,10 @@
   --bs-text-opacity: 1;
   color: rgba(var(--bs-open-access-rgb), var(--bs-text-opacity)) !important; }
 
+.text-getFTR {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-getFTR-rgb), var(--bs-text-opacity)) !important; }
+
 .text-dark-berry {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-berry-rgb), var(--bs-text-opacity)) !important; }
@@ -1451,6 +1463,10 @@
 .bg-open-access {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-open-access-rgb), var(--bs-bg-opacity)) !important; }
+
+.bg-getFTR {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-getFTR-rgb), var(--bs-bg-opacity)) !important; }
 
 .bg-dark-berry {
   --bs-bg-opacity: 1;
@@ -4137,6 +4153,7 @@
   --bs-light: #F8F9FA;
   --bs-dark: #141414;
   --bs-open-access: #941e66;
+  --bs-getFTR: #096A73;
   --bs-dark-berry: #941e66;
   --bs-medium-berry: #b92d80;
   --bs-bright-berry: #ff91aa;
@@ -4156,6 +4173,7 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 20, 20, 20;
   --bs-open-access-rgb: 148, 30, 102;
+  --bs-getFTR-rgb: 9, 106, 115;
   --bs-dark-berry-rgb: 148, 30, 102;
   --bs-medium-berry-rgb: 185, 45, 128;
   --bs-bright-berry-rgb: 255, 145, 170;
@@ -6862,6 +6880,36 @@ progress {
     background-color: #941e66;
     border-color: #941e66; }
 
+.btn-getFTR {
+  color: #fff;
+  background-color: #096A73;
+  border-color: #096A73; }
+  .btn-getFTR:hover {
+    color: #fff;
+    background-color: #085a62;
+    border-color: #07555c; }
+  .btn-check:focus + .btn-getFTR, .btn-getFTR:focus {
+    color: #fff;
+    background-color: #085a62;
+    border-color: #07555c;
+    -webkit-box-shadow: 0 0 0 0.25rem rgba(46, 128, 136, 0.5);
+            box-shadow: 0 0 0 0.25rem rgba(46, 128, 136, 0.5); }
+  .btn-check:checked + .btn-getFTR,
+  .btn-check:active + .btn-getFTR, .btn-getFTR:active, .btn-getFTR.active,
+  .show > .btn-getFTR.dropdown-toggle {
+    color: #fff;
+    background-color: #07555c;
+    border-color: #075056; }
+    .btn-check:checked + .btn-getFTR:focus,
+    .btn-check:active + .btn-getFTR:focus, .btn-getFTR:active:focus, .btn-getFTR.active:focus,
+    .show > .btn-getFTR.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.25rem rgba(46, 128, 136, 0.5);
+              box-shadow: 0 0 0 0.25rem rgba(46, 128, 136, 0.5); }
+  .btn-getFTR:disabled, .btn-getFTR.disabled {
+    color: #fff;
+    background-color: #096A73;
+    border-color: #096A73; }
+
 .btn-dark-berry {
   color: #fff;
   background-color: #941e66;
@@ -7367,6 +7415,29 @@ progress {
               box-shadow: 0 0 0 0.25rem rgba(148, 30, 102, 0.5); }
   .btn-outline-open-access:disabled, .btn-outline-open-access.disabled {
     color: #941e66;
+    background-color: transparent; }
+
+.btn-outline-getFTR {
+  color: #096A73;
+  border-color: #096A73; }
+  .btn-outline-getFTR:hover {
+    color: #fff;
+    background-color: #096A73;
+    border-color: #096A73; }
+  .btn-check:focus + .btn-outline-getFTR, .btn-outline-getFTR:focus {
+    -webkit-box-shadow: 0 0 0 0.25rem rgba(9, 106, 115, 0.5);
+            box-shadow: 0 0 0 0.25rem rgba(9, 106, 115, 0.5); }
+  .btn-check:checked + .btn-outline-getFTR,
+  .btn-check:active + .btn-outline-getFTR, .btn-outline-getFTR:active, .btn-outline-getFTR.active, .btn-outline-getFTR.dropdown-toggle.show {
+    color: #fff;
+    background-color: #096A73;
+    border-color: #096A73; }
+    .btn-check:checked + .btn-outline-getFTR:focus,
+    .btn-check:active + .btn-outline-getFTR:focus, .btn-outline-getFTR:active:focus, .btn-outline-getFTR.active:focus, .btn-outline-getFTR.dropdown-toggle.show:focus {
+      -webkit-box-shadow: 0 0 0 0.25rem rgba(9, 106, 115, 0.5);
+              box-shadow: 0 0 0 0.25rem rgba(9, 106, 115, 0.5); }
+  .btn-outline-getFTR:disabled, .btn-outline-getFTR.disabled {
+    color: #096A73;
     background-color: transparent; }
 
 .btn-outline-dark-berry {
@@ -8925,6 +8996,13 @@ progress {
   .alert-open-access .alert-link {
     color: #470e31; }
 
+.alert-getFTR {
+  color: #054045;
+  background-color: #cee1e3;
+  border-color: #b5d2d5; }
+  .alert-getFTR .alert-link {
+    color: #043337; }
+
 .alert-dark-berry {
   color: #59123d;
   background-color: #ead2e0;
@@ -9311,6 +9389,17 @@ progress {
       color: #fff;
       background-color: #59123d;
       border-color: #59123d; }
+
+.list-group-item-getFTR {
+  color: #054045;
+  background-color: #cee1e3; }
+    .list-group-item-getFTR.list-group-item-action:hover, .list-group-item-getFTR.list-group-item-action:focus {
+      color: #054045;
+      background-color: #b9cbcc; }
+    .list-group-item-getFTR.list-group-item-action.active {
+      color: #fff;
+      background-color: #054045;
+      border-color: #054045; }
 
 .list-group-item-dark-berry {
   color: #59123d;
@@ -10408,6 +10497,11 @@ progress {
   .link-open-access:hover, .link-open-access:focus {
     color: #761852; }
 
+.link-getFTR {
+  color: #096A73; }
+  .link-getFTR:hover, .link-getFTR:focus {
+    color: #07555c; }
+
 .link-dark-berry {
   color: #941e66; }
   .link-dark-berry:hover, .link-dark-berry:focus {
@@ -10832,6 +10926,9 @@ progress {
 
 .border-open-access {
   border-color: #941e66 !important; }
+
+.border-getFTR {
+  border-color: #096A73 !important; }
 
 .border-dark-berry {
   border-color: #941e66 !important; }
@@ -11691,6 +11788,10 @@ progress {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-open-access-rgb), var(--bs-text-opacity)) !important; }
 
+.text-getFTR {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-getFTR-rgb), var(--bs-text-opacity)) !important; }
+
 .text-dark-berry {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-berry-rgb), var(--bs-text-opacity)) !important; }
@@ -11806,6 +11907,10 @@ progress {
 .bg-open-access {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-open-access-rgb), var(--bs-bg-opacity)) !important; }
+
+.bg-getFTR {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-getFTR-rgb), var(--bs-bg-opacity)) !important; }
 
 .bg-dark-berry {
   --bs-bg-opacity: 1;
